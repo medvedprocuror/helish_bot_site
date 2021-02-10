@@ -1,6 +1,13 @@
 /*##################
 Commands
 ###################*/
+.command_description
+{
+	margin-left: auto;
+	border-left: 1px solid #ccc;
+	padding-left: 10px;
+}
+
 
 .cat_header {
 	margin-bottom: 1em;
