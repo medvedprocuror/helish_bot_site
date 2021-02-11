@@ -48,57 +48,99 @@
 			</div>
 			<div class="tabcontent" id="1" style="display: block;">
 				<div class="command_container">
-					<div class="command_name">!test</div>
-					lorem
+					<div class="command_name">!checkroles</div>
+					бот удалит дубликаты ролей
 				</div>
 				<div class="command_container">
-					<div class="command_name">!test</div>
-					lorem
+					<div class="command_name">!welcomer add text [текст]</div>
+					???
 				</div>
 				<div class="command_container">
-					<div class="command_name">!test</div>
-					Lorem ipsum, dolor sit amet conse
-					<div class="command_description">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</div>
-				</div>
-			</div>
-			<div class="tabcontent" id="2">
+					<div class="command_name">!welcomer add image [ссылку]</div>
+					???
+				</div>		
 				<div class="command_container">
-					<div class="command_name">!test2</div>
-					lorem
+					<div class="command_name">!welcomer add color [код цвета hex или random]</div>
+					- изменяет цвет приветствия от бота
+					<div class="command_description">Пример: !welcomer add color #ffffff</div>
 				</div>
 				<div class="command_container">
-					<div class="command_name">!test</div>
-					lorem
+					<div class="command_name">!prefix [символ]</div>
+					- изменяет префикс бота
+					<div class="command_description">Пример: !prefix //</div>
 				</div>
 				<div class="command_container">
-					<div class="command_name">!test</div>
-					lorem
-				</div>
-			</div>
-			<div class="tabcontent" id="3">
-				<div class="command_container">
-					<div class="command_name">!test3</div>
-					lorem
+					<div class="command_name">!welcomer delete</div>
+					- удаляет изменения к приветствию бота
 				</div>
 				<div class="command_container">
-					<div class="command_name">!test</div>
-					lorem
+					<div class="command_name">!welcomer add text 'Текст'</div>
+					- добавляет текст к приветствию бота. Поддерживает переменные: ...
+					<div class="command_description">!welcomer add text `%member% зашел без стука на helish_88's server.`</div>
 				</div>
 				<div class="command_container">
-					<div class="command_name">!test</div>
-					lorem
+					<div class="command_name">!farewell 'Текст'</div>
+					- добавляет текст к сообщению бота когда человек уходит с сервера. Поддерживает те же переменные что и !welcomer add text
+					<div class="command_description">!farewell `%member% сбежал с %server%. Он киданул %users% человечков и %bots% ботов`</div>
 				</div>
-			</div>
-			<!--
-                <div class="command_container">
-					<div class="command_name">!help</div>
-						- показывает что то Lorem ipsum (хуйня ебаная) dolor sit amet consectetur, adipisicing elit. Voluptatibus, dolor recusandae modi ab possimus, consectetur mollitia eius deserunt provident laudantium excepturi asperiores quam corporis nam accusamus ducimus. Quo, velit libero?
-				</div>-->
+				<div class="command_container">
+					<div class="command_name">!welcome [#канал]</div>
+					- добавляет канал для приветствий и провожаний бота. Пропишите еще раз что бы удалить канал
+					<div class="command_description">!welcome #general</div>
+				</div>
+				<div class="command_container">
+					<div class="command_name">!mute, mut, мют, мут [@пользователь] [время] [причина]</div>
+					- мутит пользователя на определенное время. Так же возможен мут по ID пользователя.
+					<div class="command_description">!мют @helish_88#777 10 секунд спамил.</div>
+				</div>
+				<div class="command_container">
+					<div class="command_name">!unmute, unmut, анмют, анмут [@пользователь]</div>
+					- отменяет мут. Возможен размут на ID пользователя
+					<div class="command_description">!анмют @helish_88#7777</div>
+				</div>
+				<div class="command_container">
+					<div class="command_name">!кик [@user] [причина]</div>
+					- выгоняет пользователя с сервера. Причину можно не указывать
+					<div class="command_description">!кик @helish_88#7777 'плохой мальчик'</div>
+				</div>
+				<div class="command_container">
+					<div class="command_name">!бан [@user] [причина]</div>
+					- банит пользователя на сервере. Причину можно не указывать
+					<div class="command_description">!бан @helish_88#7777 'слишком плохой мальчик'</div>
+				</div>
+				<div class="command_container">
+					<div class="command_name">!clearleaderboard</div>
+					- удаляет старых пользователей из списка лидеров 
+				</div>
+				<div class="command_container">
+					<div class="command_name">!clearweddings</div>
+					- удаляет старых пользователей из системы браков
+				</div>
+				<div class="command_container">
+					<div class="command_name">!logchannel [#канал]</div>
+					- устанавливает канал для просмотра измененных сообщений
+					<div class="command_description">!logchanel #logs</div>
+				</div>
+				<div class="command_container">
+					<div class="command_name">!giveaway , раздача</div>
+					- позволяет выбрать победителя раздачи. Команда интерактивная
+				</div>
+				<div class="command_container">
+					<div class="command_name">!написать [текст или эмбед] [#канал] [цвет в формате hex или слово random][ваш текст]</div>
+					- пишет от имени бота в выбраном канале. Так же если выбран эмбед можно использовать ссылки так: [текст](https://google.com)
+					<div class="command_description">!написать эмбед #🤖bot-spam #87130b тест</div>
+				</div>
+				<div class="command_container">
+					<div class="command_name">!изменить [#канал] [ID сообщения] [эмбед или текст] [ваш текст]</div>
+					- изменяет сообщения бота. Поддерживает ссылки как и !написать. Как узнать ID сообщения можно узнать  <a href='https://is.gd/8kjSCs'>тут</a>.
+				</div>
+			</div>				
 		</div>
 	</div>
 	</div>
 	<div id="copyright" class="container">
 		<p>helish_88😈#7777</p>
+		<p>Nereg#7006</p>
 	</div>
 </body>
 
