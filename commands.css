@@ -1,13 +1,12 @@
 /*##################
 Commands
 ###################*/
-.command_description
-{
+
+.command_description {
 	margin-left: auto;
 	border-left: 1px solid #ccc;
 	padding-left: 10px;
 }
-
 
 .cat_header {
 	margin-bottom: 1em;
@@ -29,10 +28,11 @@ Commands
 	margin-top: 1em;
 	color: red;
 }
-.command_container a 
-{
+
+.command_container a {
 	margin-left: 10px;
 }
+
 .command_name {
 	background-color: #3641DD;
 	padding: 10px;
@@ -46,7 +46,7 @@ Commands
 .tab {
 	overflow: hidden;
 	border: 1px solid #ccc;
-	background-color: #f1f1f1;
+	background-color: #12aa8e;
 }
 
 /* Style the buttons that are used to open the tab content */
@@ -82,6 +82,7 @@ Commands
 	border: 1px solid #ccc;
 	border-top: none;
 }
+
 .cmd-list {
 	display: flex;
 	background: #2C383B;
