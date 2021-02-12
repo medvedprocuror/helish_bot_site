@@ -52,7 +52,7 @@ Commands
 /* Style the buttons that are used to open the tab content */
 
 .tab button {
-	background-color: inherit;
+	background-color: #12aa8e;
 	float: left;
 	border: none;
 	outline: none;
