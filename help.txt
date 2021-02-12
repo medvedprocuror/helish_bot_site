@@ -66,8 +66,7 @@
 !история [начало истории]", value="начните историю и бот ее продолжит +
 !скрамбл ", value="Скрамбл для кубика Рубика 3х3 +
 !invite", value="ссылка чтобы пригласить бота +
-                #NSFW
-                    await msg.edit(embed = discord.Embed(title=f"NSFW", description="команды", timestamp=datetime.utcnow(), color = discord.Color(random.randint(0x000000, 0xFFFFFF)))\
+#NSFW
                     .add_field(name=f" !realbooru или !rb и тег    -пример **!rb pussy** 
                     .add_field(name=f"все теги для !rb    -`ass`, `gif`, `mom`, `breasts`, `pussy`, `sex`, `female`, `cleavage`, `nude`, `bdsm`, `spanking`, `lesbian` 
                     !hentai или !хентай    -рандомные хентай картинки 
