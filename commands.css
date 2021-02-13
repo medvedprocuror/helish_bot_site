@@ -92,41 +92,30 @@ Commands
 Buttons effect
 ###################*/
 
-#menu li {
-	/*width: 125px;*/
-	width: auto;
-	height: 50px;
+.header_button {
 	transition: background-position-x 0.9s linear;
-	text-align: center;
-}
-
-#menu li a {
+	text-align: center;	
 	font-size: 22px;
-	color: #777;
 	text-decoration: none;
 	transition: all 0.45s;
+	color: rgb(111, 168, 217);
+	text-transform: uppercase;
 }
 
-#menu li:hover {
+.header_button:hover {
 	/*background: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB2ZXJzaW9uPSIxLjEi%0D%0AIGlkPSJMYXllcl8xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhs%0D%0AaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB4PSIwcHgiIHk9IjBweCIKCSB3aWR0%0D%0AaD0iMzkwcHgiIGhlaWdodD0iNTBweCIgdmlld0JveD0iMCAwIDM5MCA1MCIgZW5hYmxlLWJhY2tn%0D%0Acm91bmQ9Im5ldyAwIDAgMzkwIDUwIiB4bWw6c3BhY2U9InByZXNlcnZlIj4KPHBhdGggZmlsbD0i%0D%0Abm9uZSIgc3Ryb2tlPSIjZDk0ZjVjIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLW1pdGVybGlt%0D%0AaXQ9IjEwIiBkPSJNMCw0Ny41ODVjMCwwLDk3LjUsMCwxMzAsMAoJYzEzLjc1LDAsMjguNzQtMzgu%0D%0ANzc4LDQ2LjE2OC0xOS40MTZDMTkyLjY2OSw0Ni41LDI0My42MDMsNDcuNTg1LDI2MCw0Ny41ODVj%0D%0AMzEuODIxLDAsMTMwLDAsMTMwLDAiLz4KPC9zdmc+Cg==");
 	*/
-	background: url("data:image/svg+xml,%3Csvg width='700' height='50' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cg class='layer'%3E%3Ctitle%3ELayer 1%3C/title%3E%3Cpath d='m0,47.585c0,0 174.5,0 232.66667,0c24.60898,0 51.43724,-38.778 82.62889,-19.416c29.53256,18.331 120.69136,19.416 150.03778,19.416c56.95144,0 232.66667,0 232.66667,0' fill='none' id='svg_1' stroke='%23d94f5c' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
+	background: url("data:image/svg+xml,%3Csvg width='900' height='30' xmlns='http://www.w3.org/2000/svg' xmlns:svg='http://www.w3.org/2000/svg'%3E%3Cg class='layer'%3E%3Ctitle%3ELayer 1%3C/title%3E%3Cpath d='m0,26.585c0,0 223.99999,0 298.66666,0c31.58975,0 66.02832,-38.778 106.06803,-19.416c37.90999,18.331 154.92758,19.416 192.59863,19.416c73.10672,0 298.66666,0 298.66666,0' fill='none' id='svg_1' stroke='%23d94f5c' stroke-miterlimit='10' stroke-width='1.5'/%3E%3C/g%3E%3C/svg%3E");
 	animation: line 1s;
 }
 
-#menu li:hover a {
+.header_button:hover {
 	color: #d94f5c;
 }
 
 #menu li {
 	margin-right: 30px;
 }
-
-/*
-#menu li:not(:last-child) {
-	margin-right: 30px;
-}
-*/
 
 @keyframes line {
 	0% {
@@ -154,13 +143,6 @@ h1, h2, h3 {
 	font-weight: 600;
 	color: #454445;
 }
-
-/*
-p, ol, ul
-{
-	margin-top: 0;
-}
-*/
 
 ol, ul {
 	padding: 0;
@@ -461,8 +443,11 @@ ul.contact li a.icon-rss:before {
 }
 
 #header {
-	position: top;
-	height: 100px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: center;
+	min-height: 100px;
 }
 
 /*********************************************************************************/
@@ -472,18 +457,14 @@ ul.contact li a.icon-rss:before {
 /*********************************************************************************/
 
 #logo {
-	position: sticky;
-	top: 2em;
-	left: 7em;
-	width: 100%;
-}
-
-#logo h1 {
 	display: inline-block;
 	font-size: 2.5em;
 	font-weight: 700;
 	color: #1ec438;
 	padding-right: 0.50em;
+}
+
+#logo h1 {
 	/*border-right: 1px solid rgba(0,0,0,.3);*/
 }
 
