@@ -163,7 +163,6 @@ a:hover {
 
 .container {
 	margin: 0px auto;
-	width: 1200px;
 }
 
 /*********************************************************************************/
@@ -519,14 +518,11 @@ ul.contact li a.icon-rss:before {
 	/*background: #2C383B;*/
 }
 
-#menu li:hover a, #menu li.active a, #menu li.active span {}
-
-#menu .current_page_item a {
+.current_page_item  {
 	/*background: #2C383B;*/
 	color: #FFF;
 }
 
-#menu .icon {}
 
 /*********************************************************************************/
 
