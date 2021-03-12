@@ -703,6 +703,13 @@
 	function filterSelection(c) {
 	  var x, i;
 	  x = document.getElementsByClassName("collapsible");
+	  for (var j = 0; j<x.length; j++){
+	  	x[j].className = x[j].className.replace(" active", "")
+	  }
+	  var l = document.getElementsByClassName("content")
+	  for (var j = 0; j<l.length; j++){
+	  	l[j].style.maxHeight = null
+	  }
 	  if (c == "all") c = "";
 	  for (i = 0; i < x.length; i++) {
 	    RemoveClass(x[i], "show");
